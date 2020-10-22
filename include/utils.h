@@ -2,13 +2,13 @@
 #define _UTILS_H
 
 #ifndef NDEBUG
-#define log(format,...)				\
+#define log(...)				\
   do {							\
-    fprintf ( stderr , format __VA_OPT__(,)  __VA_ARGS__ ) ;	\
+    fprintf ( stderr , __VA_ARGS__ ) ;	\
     fflush ( stderr ) ;					\
   } while ( 0 )
 #else
-#define log(format,...) ((void) 0)
+#define log(...) ((void) 0)
 #endif
 
 
