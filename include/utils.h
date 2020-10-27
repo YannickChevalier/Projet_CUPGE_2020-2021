@@ -8,7 +8,7 @@
     fflush ( stderr ) ;					\
   } while ( 0 )
 #else
-#define log(format,...) ((void) 0)
+#define log(...) ((void) 0)
 #endif
 
 
