@@ -6,6 +6,9 @@
 *.ko
 *.obj
 *.elf
+!/lib/dbg/*.o
+!/lib/prof/*.o
+
 
 # Linker output
 *.ilk
