@@ -4,7 +4,7 @@
 #ifndef NDEBUG
 #define log(...)				\
   do {							\
-    fprintf ( stderr , __VA_ARGS__ ) ;	\
+    fprintf ( stderr ,  __VA_ARGS__ ) ;	\
     fflush ( stderr ) ;					\
   } while ( 0 )
 #else
@@ -18,5 +18,6 @@ int lire_entier ( FILE * f ) ;
 int lire_entier_intervalle ( FILE * f , int min, int max ) ;
 float lire_float ( FILE * f ) ;
 char * lire_string ( FILE * f) ;
+int lire_mot_clef ( FILE * f , const char * mot ) ;
 
 #endif
